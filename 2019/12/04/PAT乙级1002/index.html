@@ -50,14 +50,15 @@
   };
 </script>
 
-  <meta name="description" content="自己的垃圾代码（c实现） #include “stdio.h”#include “string.h”int main(){    char a[100];    int b[10]={0};    int i=0,x=0,sum=0,j=0,k=0,y=0,t=0;    scanf(“%s”,a);    for(i=0;i&amp;lt;strlen(a);i++)    {        sum=s">
+  <meta name="description" content="#include “stdio.h”#include “string.h”int main(){    char a[100];    int b[10]={0};    int i=0,x=0,sum=0,j=0,k=0,y=0,t=0;    scanf(“%s”,a);    for(i=0;i&amp;lt;strlen(a);i++)    {        sum=sum+((int)a[i]">
+<meta name="keywords" content="自己的垃圾代码（c实现）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PAT乙级1002">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;04&#x2F;PAT%E4%B9%99%E7%BA%A71002&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="自己的垃圾代码（c实现） #include “stdio.h”#include “string.h”int main(){    char a[100];    int b[10]={0};    int i=0,x=0,sum=0,j=0,k=0,y=0,t=0;    scanf(“%s”,a);    for(i=0;i&amp;lt;strlen(a);i++)    {        sum=s">
+<meta property="og:description" content="#include “stdio.h”#include “string.h”int main(){    char a[100];    int b[10]={0};    int i=0,x=0,sum=0,j=0,k=0,y=0,t=0;    scanf(“%s”,a);    for(i=0;i&amp;lt;strlen(a);i++)    {        sum=sum+((int)a[i]">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-04T01:54:31.142Z">
+<meta property="og:updated_time" content="2019-12-04T01:58:52.114Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/12/04/PAT%E4%B9%99%E7%BA%A71002/">
@@ -199,7 +200,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2019-12-04 09:51:15 / Modified: 09:54:31" itemprop="dateCreated datePublished" datetime="2019-12-04T09:51:15+08:00">2019-12-04</time>
+              <time title="Created: 2019-12-04 09:51:15 / Modified: 09:58:52" itemprop="dateCreated datePublished" datetime="2019-12-04T09:51:15+08:00">2019-12-04</time>
             </span>
 
           
@@ -213,8 +214,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>自己的垃圾代码（c实现）</p>
-<p>#include “stdio.h”<br>#include “string.h”<br>int main()<br>{<br>    char a[100];<br>    int b[10]={0};<br>    int i=0,x=0,sum=0,j=0,k=0,y=0,t=0;<br>    scanf(“%s”,a);<br>    for(i=0;i&lt;strlen(a);i++)<br>    {<br>        sum=sum+((int)a[i]-48);<br>     }<br>     k=sum;<br>    while(k!=0)<br>    {<br>        b[j]=k%10;<br>        k=k/10;<br>        j++;<br>    }<br>    for(y=0;y&lt;j/2;y++)<br>    {<br>        t=b[y];<br>        b[y]=b[j-1-y];<br>        b[j-1-y]=t;<br>    }<br>    for(x=0;x&lt;j;x++)<br>    {<br>        switch (b[x])<br>        {<br>            case 0:{<br>            printf(“ling”);<br>            break;<br>            }<br>            case 1:{<br>                printf(“yi”);<br>                break;<br>            }<br>            case 2:{<br>                printf(“er”);<br>                break;<br>            }<br>            case 3:{<br>                printf(“san”);<br>                break;<br>            }<br>            case 4:{<br>                printf(“si”);<br>                break;<br>            }<br>            case 5:{<br>                printf(“wu”);<br>                break;<br>            }<br>            case 6:{<br>                printf(“liu”);<br>                break;<br>            }<br>            case 7:{<br>                printf(“qi”);<br>                break;<br>            }<br>            case 8:{<br>                printf(“ba”);<br>                break;<br>            }<br>            case 9:{<br>                printf(“jiu”);<br>                break;<br>            }<br>        }<br>        if(x&lt;j-1)<br>        printf(“ “);<br>    }<br>    return 0;<br> } </p>
+        <p>#include “stdio.h”<br>#include “string.h”<br>int main()<br>{<br>    char a[100];<br>    int b[10]={0};<br>    int i=0,x=0,sum=0,j=0,k=0,y=0,t=0;<br>    scanf(“%s”,a);<br>    for(i=0;i&lt;strlen(a);i++)<br>    {<br>        sum=sum+((int)a[i]-48);<br>     }<br>     k=sum;<br>    while(k!=0)<br>    {<br>        b[j]=k%10;<br>        k=k/10;<br>        j++;<br>    }<br>    for(y=0;y&lt;j/2;y++)<br>    {<br>        t=b[y];<br>        b[y]=b[j-1-y];<br>        b[j-1-y]=t;<br>    }<br>    for(x=0;x&lt;j;x++)<br>    {<br>        switch (b[x])<br>        {<br>            case 0:{<br>            printf(“ling”);<br>            break;<br>            }<br>            case 1:{<br>                printf(“yi”);<br>                break;<br>            }<br>            case 2:{<br>                printf(“er”);<br>                break;<br>            }<br>            case 3:{<br>                printf(“san”);<br>                break;<br>            }<br>            case 4:{<br>                printf(“si”);<br>                break;<br>            }<br>            case 5:{<br>                printf(“wu”);<br>                break;<br>            }<br>            case 6:{<br>                printf(“liu”);<br>                break;<br>            }<br>            case 7:{<br>                printf(“qi”);<br>                break;<br>            }<br>            case 8:{<br>                printf(“ba”);<br>                break;<br>            }<br>            case 9:{<br>                printf(“jiu”);<br>                break;<br>            }<br>        }<br>        if(x&lt;j-1)<br>        printf(“ “);<br>    }<br>    return 0;<br> } </p>
 
     </div>
 
@@ -223,6 +223,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9E%83%E5%9C%BE%E4%BB%A3%E7%A0%81%EF%BC%88c%E5%AE%9E%E7%8E%B0%EF%BC%89/" rel="tag"># 自己的垃圾代码（c实现）</a>
+          </div>
 
         
 
@@ -294,7 +297,7 @@
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
