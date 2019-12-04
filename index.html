@@ -172,6 +172,66 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/04/PAT%E4%B9%99%E7%BA%A71002/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/04/PAT%E4%B9%99%E7%BA%A71002/" class="post-title-link" itemprop="url">PAT乙级1002</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-12-04 09:51:15 / Modified: 09:54:31" itemprop="dateCreated datePublished" datetime="2019-12-04T09:51:15+08:00">2019-12-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>自己的垃圾代码（c实现）</p>
+<p>#include “stdio.h”<br>#include “string.h”<br>int main()<br>{<br>    char a[100];<br>    int b[10]={0};<br>    int i=0,x=0,sum=0,j=0,k=0,y=0,t=0;<br>    scanf(“%s”,a);<br>    for(i=0;i&lt;strlen(a);i++)<br>    {<br>        sum=sum+((int)a[i]-48);<br>     }<br>     k=sum;<br>    while(k!=0)<br>    {<br>        b[j]=k%10;<br>        k=k/10;<br>        j++;<br>    }<br>    for(y=0;y&lt;j/2;y++)<br>    {<br>        t=b[y];<br>        b[y]=b[j-1-y];<br>        b[j-1-y]=t;<br>    }<br>    for(x=0;x&lt;j;x++)<br>    {<br>        switch (b[x])<br>        {<br>            case 0:{<br>            printf(“ling”);<br>            break;<br>            }<br>            case 1:{<br>                printf(“yi”);<br>                break;<br>            }<br>            case 2:{<br>                printf(“er”);<br>                break;<br>            }<br>            case 3:{<br>                printf(“san”);<br>                break;<br>            }<br>            case 4:{<br>                printf(“si”);<br>                break;<br>            }<br>            case 5:{<br>                printf(“wu”);<br>                break;<br>            }<br>            case 6:{<br>                printf(“liu”);<br>                break;<br>            }<br>            case 7:{<br>                printf(“qi”);<br>                break;<br>            }<br>            case 8:{<br>                printf(“ba”);<br>                break;<br>            }<br>            case 9:{<br>                printf(“jiu”);<br>                break;<br>            }<br>        }<br>        if(x&lt;j-1)<br>        printf(“ “);<br>    }<br>    return 0;<br> } </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/22/java%E5%85%A5%E9%97%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -412,7 +472,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
